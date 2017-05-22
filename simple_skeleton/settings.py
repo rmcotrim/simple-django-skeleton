@@ -11,13 +11,13 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 # import os
-from decouple import Config
+from decouple import config
 from unipath import Path
 import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 #BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-BASE_DIR = Path(__file__).parent
+PROJECT_DIR = Path(__file__).parent
 
 
 # Quick-start development settings - unsuitable for production
@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'simple_skeleton.apps.core',
 ]
 
 MIDDLEWARE = [
