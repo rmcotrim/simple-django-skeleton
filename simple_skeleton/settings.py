@@ -133,8 +133,8 @@ STATIC_ROOT = PROJECT_DIR.parent.parent.child('static')
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-    PROJECT_DIR.child('static')
+    PROJECT_DIR.child('static'),
 )
 
 MEDIA_ROOT = PROJECT_DIR.parent.parent.child('media')
-MEDIA_URL='/media/'
+MEDIA_URL = '/media/'
